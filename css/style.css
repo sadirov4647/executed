@@ -50,6 +50,9 @@ img {
 .site-logo{
     margin-right: 175px;
 }
+.site-logo a{
+    display: block;
+}
 .site-nav-list{
     font-weight: 500;
     width: 815px;
@@ -379,7 +382,7 @@ mark{
     display: flex;
     margin: 0;
     padding: 0;
-
+    
 }
 .card-events{
     width: 100%;
@@ -689,7 +692,7 @@ mark{
 
 
 /* Responsive */
-@media screen and (max-width: 768px){
+@media only screen and (max-width: 768px) and (min-width: 433px){
     .container{
         width: 796px;
         padding-right: 20px;
@@ -728,7 +731,7 @@ mark{
     .help-icons{
         padding: 0;
     }
-
+    
     .section-titles{
         width: 80%;
     }
@@ -764,6 +767,150 @@ mark{
     }
     .site-footer{
         width: 105%;
+    }
+}
+
+@media screen and (max-width: 432px){
+    .container{
+        width: 472px;
+    }
+    .site-nav-list{
+        display: block;
+        position: absolute;
+        width: 70vw;
+        height: 90vh;
+        margin-top: 20vh;
+        position: fixed;
+        padding-left: 32px;
+        padding-top: 64px;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background:var(--titles-color);
+        transition: top 1s ease;
+        transform: translateX(-300px);
+        transition: 0.3s;
+    }
+    .site-logo{
+        margin-left: 130px;
+        margin-right: 0;
+    }
+    .site-nav-item:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .site-nav-item a{
+        color: #fff;
+    }
+    .site-nav{
+        display: flex;
+        position: fixed;
+        top: 5%;
+        z-index: 15;
+    }
+    .burger-btn {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 45%;
+        right: 85%;
+        width: 35px;
+        height: 35px;
+        margin-top: -17.5px;
+        margin-left: -17.5px;
+        color: yellow;
+    }
+    .burger-btn .lines {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background: yellow;
+        position: relative;
+        top: 50%;
+        transition: transform 0.5s cubic-bezier(0, 0, 1, 1), background 0.5s ease;
+        margin-top: -2px;
+    }
+    .burger-btn .lines:after,
+    .burger-btn .lines:before {
+        content: "";
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        left: 0;
+        background: yellow;
+        -webkit-transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+    }
+    .burger-btn .lines:after {
+        bottom: -10px;
+    }
+    .burger-btn .lines:before {
+        top: -10px;
+    }
+    .burger-btn.active .lines {
+        background: transparent;
+        transform: rotate(90deg);
+    }
+    .burger-btn.active .lines:after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+    .burger-btn.active .lines:before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+    .active{
+        transform: translateX(0px);
+        background: mediumslateblue;
+    }
+    .nav-btn{
+        margin-top: 170px;
+        border: 2px solid darkturquoise;
+    }
+    .nav-btn:hover{
+        border-color: aqua;
+    }
+    .help{
+        margin-top: 20%;
+    }
+    .help-right{
+        position: static;
+        width: 100%;
+    }
+    .help-left{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .help-icons{
+        padding: 0;
+        margin-top: 20px;
+    }
+    .universities-images{
+        margin-left: 20%;
+    }
+    .slick-dots{
+        width: 60%;
+    }
+    .section-titles{
+        width: 100%;
+    }
+    .news-card-list{
+        display: block;
+    }
+    .news-card-item{
+       margin: 0 auto;
+    }
+    .news-card-item:not(:last-child){
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    .footer-list{
+        display: block;
+    }
+    .dream-wrapper{
+        display: block;
     }
 }
 
