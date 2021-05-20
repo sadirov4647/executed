@@ -887,6 +887,9 @@ mark{
         padding: 0;
         margin-top: 20px;
     }
+    .universities{
+        width: 109%;
+    }
     .universities-images{
         margin-left: 20%;
     }
@@ -899,6 +902,12 @@ mark{
     .news-card-list{
         display: block;
     }
+    .news-section{
+        width: 109%;
+    }
+    .countries-section{
+        width: 109%;
+    }
     .news-card-item{
        margin: 0 auto;
     }
@@ -908,6 +917,16 @@ mark{
     }
     .footer-list{
         display: block;
+        text-align: center;
+    }
+    .dreams-section{
+        width: 109%;
+    }
+    .site-footer{
+        width: 109%;
+    }
+    .footer-icons{
+        justify-content: center;
     }
     .dream-wrapper{
         display: block;
