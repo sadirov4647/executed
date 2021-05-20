@@ -770,7 +770,7 @@ mark{
     }
 }
 
-@media screen and (max-width: 432px){
+@media only screen and (max-width: 432px){
     .container{
         width: 472px;
     }
