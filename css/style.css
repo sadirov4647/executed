@@ -694,7 +694,7 @@ mark{
 /* Responsive */
 @media only screen and (max-width: 768px) and (min-width: 433px){
     .container{
-        width: 796px;
+        width: 768px;
         padding-right: 20px;
         padding-left: 20px;
         margin-left: auto;
