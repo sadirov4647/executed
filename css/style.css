@@ -40,7 +40,7 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
-.site-header{
+.site-header{   
     padding-top: 41px;
 }
 .site-nav{
@@ -48,7 +48,11 @@ img {
     margin-bottom: 140px;
 }
 .site-logo{
+    flex-shrink: 0;
     margin-right: 175px;
+}
+.site-logo a{
+    display: block;
 }
 .site-nav-list{
     font-weight: 500;
@@ -377,7 +381,7 @@ mark{
     display: flex;
     margin: 0;
     padding: 0;
-
+    
 }
 .card-events{
     width: 100%;
@@ -685,3 +689,20 @@ mark{
     margin-right: 30px;
 }
 
+
+@media only screen and (max-width: 920px) and (min-width: 800px) {
+    .site-nav{
+        
+    }
+    .site-logo{
+        margin-right: 75px;
+    }
+    .article{
+        margin-top: 500px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 116px;
+    }
+}
