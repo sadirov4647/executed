@@ -16,6 +16,7 @@ body {
     font-display: swap;
     font-size: 17px;
     line-height: 20px;
+    overflow-x: hidden;
 }
 
 img {
@@ -691,6 +692,9 @@ mark{
 
 
 @media only screen and (max-width: 920px) and (min-width: 800px) {
+    .section-description{
+        
+    }
     .site-nav{
         
     }
@@ -698,11 +702,35 @@ mark{
         margin-right: 75px;
     }
     .article{
-        margin-top: 500px;
+        margin-top: 570px;
         display: flex;
         align-items: center;
         flex-direction: column;
         text-align: center;
         margin-bottom: 116px;
+    }
+}
+
+
+@media only screen and (max-width: 800px) and (min-width: 500px) {
+    .article{
+        margin-top: 570px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 116px;
+    }
+    .help-description{
+        font-size: 20px;
+    }
+    .help-icons{
+        padding-bottom: 0;
+    }
+    .apply{
+        margin-bottom: 30px;
+    }
+    .section-description{
+        font-size: 18px;
     }
 }
