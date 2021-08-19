@@ -25,8 +25,13 @@
                 <div class="site-logo">
                     <a href="#"><img src="./images/header-section/logo.png" alt="site logo" width="146" height="52"></a>
                 </div>
+<<<<<<< HEAD
 
 
+=======
+                
+                <a class="burger-btn openMenu"><span class="lines"></span></a>
+>>>>>>> 3a834f04691d10842ff6af8100fe5b120a6f44f2
                 <ul class="site-nav-list">
                     <li class="site-nav-item"><a href="#">Home</a></li>
                     <li class="site-nav-item"><a href="#">About Us</a></li>
@@ -238,7 +243,7 @@
                         </div>
                     </div>
                 </li>
-
+                
                 <li class="events-card-item">
                     <div class="card-events">
                         <div class="card-events-header">
@@ -434,6 +439,44 @@
             slidesToShow: 2,
             variableWidth: true
         });
+        
+        var element = {
+            select : document.querySelector(".burger-btn"),
+            active : 'active',
+            className : function(){
+                return this.select.className;
+            }
+        }
+        
+        element.select.onclick = function() {
+            var checker = hasClass(element.select, element.active);
+            
+            if(checker) {
+                removeClass(element.select, element.active);
+            }
+            else {
+                element.select.className = element.select.className + ' active';
+            }
+        }
+        
+        function hasClass(elem, className) {
+            return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+        }
+        
+        function removeClass(elem, className) {
+            var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
+            if (hasClass(elem, className)) {
+                while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
+                    newClass = newClass.replace(' ' + className + ' ', ' ');
+                }
+                elem.className = newClass.replace(/^\s+|\s+$/g, '');
+            }
+        }
+        
+        
+        document.querySelector('.openMenu').addEventListener('click',()=>{
+            document.querySelector('.site-nav-list').classList.toggle('active')
+        })
     </script>
 </body>
 
