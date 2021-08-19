@@ -698,6 +698,7 @@ mark{
 }
 
 
+
 @media only screen and (max-width: 920px) and (min-width: 801px) {
     .container{
         width: 920px;
@@ -766,8 +767,13 @@ mark{
     .container{
         max-width: 540px;
     }
+    .site-header{
+        position: relative;
+    }
     .site-nav{
         display: block;
+        width: 100%;
+        z-index: 99;
     }
     .site-nav-list{
         flex-direction: column;
@@ -775,10 +781,14 @@ mark{
         max-width: 30%;
         align-items: center;
         right: 0;
-        transform: translateX(300px);
+        transform: translateX(500px);
+        transition: 0.5s ease;
+        z-index: 99;
     }   
     .res-btn{
         display: block;
+        position: absolute;
+        right: 40px;
     }
     .help{
         display: block;
@@ -790,10 +800,12 @@ mark{
     .site-nav{
         justify-content: space-between;
         margin-bottom: 0;
+        position: fixed;
     }
     .site-logo{
         margin-right: 0;
         display: flex;
+        align-items: center;
         justify-content: space-between;
     }
     .help-description{
@@ -808,9 +820,28 @@ mark{
     }
     .site-nav-list{
         flex-direction: column;
-        
+        background-color: cadetblue;
     }
     .site-nav-item:not(:last-child){
         margin-bottom: 20px;
+    }
+    .site-nav-item a{
+        color: #fff;
+    }
+    .transform{
+        transform: translateX(0px);
+        transition: 0.5s ease;
+    }
+    .article{
+        margin-bottom: 0;
+        margin-top: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .help-right{
+        top: 120px;
     }
 }
