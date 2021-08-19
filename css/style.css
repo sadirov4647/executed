@@ -692,14 +692,17 @@ mark{
 
 
 @media only screen and (max-width: 920px) and (min-width: 800px) {
-    .section-description{
-        
+    .container{
+        width: 920px;
     }
-    .site-nav{
-        
+    .help{
+        display: block;
     }
     .site-logo{
         margin-right: 75px;
+    }
+    .help-right{
+        right: -102px;
     }
     .article{
         margin-top: 570px;
@@ -712,7 +715,17 @@ mark{
 }
 
 
+
 @media only screen and (max-width: 800px) and (min-width: 500px) {
+    .container{
+        width: 800px;
+    }
+    .help{
+        display: block;
+    }
+    .site-logo{
+        margin-right: 50px;
+    }
     .article{
         margin-top: 570px;
         display: flex;
@@ -727,10 +740,57 @@ mark{
     .help-icons{
         padding-bottom: 0;
     }
+    .help-right{
+        top: 110px;
+        right: -144px;
+    }
     .apply{
         margin-bottom: 30px;
     }
     .section-description{
         font-size: 18px;
+    }
+    .section-titles .service{
+        width: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 320px) {
+    .container{
+        max-width: 540px;
+    }
+    /* .site-nav{
+        display: block;
+    } */
+    .help{
+        display: block;
+    }
+    .help-title{
+        font-size: 32px;
+        line-height: 45px;
+    }
+    .site-logo{
+        margin-right: 300px;
+    }
+    .site-nav{
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+    .help-description{
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .help-icons{
+        padding-bottom: 0;
+    }
+    .apply{
+        margin-bottom: 15px;
+    }
+    .site-nav-list{
+        flex-direction: column;
+        
+    }
+    .site-nav-item:not(:last-child){
+        margin-bottom: 20px;
     }
 }
