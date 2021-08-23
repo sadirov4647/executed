@@ -723,6 +723,12 @@ mark{
     .section-titles{
         width: 750px;
     }
+    .news-card-list{
+        justify-content: space-around;
+    }
+    .news-card-item:not(:last-child){
+        margin-bottom: 32px;
+    }
 }
 
 
@@ -767,28 +773,40 @@ mark{
     .section-titles{
         max-width: 550px;
     }
+    .news-card-item:not(:last-child){
+        margin-bottom: 32px;
+    }
+    .news-card-list{
+        justify-content: center;
+    }
 }
 
 @media only screen and (max-width: 660px) and (min-width: 501px) {
-   .container{
-       max-width: 680px;
-   }
-   .site-logo{
-       margin-right: 25px;
-   }
-   .site-nav-list{
-       justify-content: stretch;
-   }
-   .site-nav-item:not(:last-child){
-       margin-right: 10px;
-   }
-   .nav-btn{
-    padding: 6px 16px 6px 16px;
-   }
-   .section-titles{
-    max-width: 450px;
-}
-   
+    .container{
+        max-width: 680px;
+    }
+    .site-logo{
+        margin-right: 25px;
+    }
+    .site-nav-list{
+        justify-content: stretch;
+    }
+    .site-nav-item:not(:last-child){
+        margin-right: 10px;
+    }
+    .nav-btn{
+        padding: 6px 16px 6px 16px;
+    }
+    .section-titles{
+        max-width: 450px;
+    }
+    .countries-item{
+        max-width: 75%;
+    }
+    .news-card-item:not(:last-child){
+        margin-right: 0;
+    }
+    
 }
 
 
@@ -880,15 +898,33 @@ mark{
         max-width: 320px;
     }
     .section-description{
-        font-size: 18px;
+        font-size: 17px;
     }
     .card-service{
         max-width: 320px;
+    }
+    .news-card-list{
+        display: block;
+    }
+    .news-card-item:not(:last-child){
+        margin-bottom: 32px;
+    }
+    .news-card-item{
+        width: 310px;
     }
 }
 
 @media only screen and (max-width: 319px) {
     .section-titles{
+        max-width: 300px;
+    }
+    .news-card-list{
+        display: block;
+    }
+    .news-card-item:not(:last-child){
+        margin-bottom: 32px;
+    }
+    .news-card-item{
         max-width: 300px;
     }
 }
