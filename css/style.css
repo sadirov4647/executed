@@ -563,11 +563,12 @@ mark{
 }
 .dream-wrapper{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
 }
 .dream-title{
     font-weight: bold;
+    margin-right: auto;
     font-size: 37px;
     line-height: 43px;
     color: #252525;
@@ -699,6 +700,7 @@ mark{
 
 
 
+
 @media only screen and (max-width: 920px) and (min-width: 801px) {
     .container{
         width: 920px;
@@ -729,6 +731,14 @@ mark{
     .news-card-item:not(:last-child){
         margin-bottom: 32px;
     }
+    .dream-wrapper{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .dream-title{
+        margin-right: 0;
+    }
+
 }
 
 
