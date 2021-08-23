@@ -912,6 +912,9 @@ mark{
     .news-card-item{
         width: 310px;
     }
+    .slick-slide{
+        width: 400px;
+    }
 }
 
 @media only screen and (max-width: 319px) {
